@@ -11,7 +11,7 @@ Campus Bridge is a modern and lightweight LMS (Learning Management System) tailo
 
 ## 🚀 Live Demo
 
-🌐 [Demo Link](https://campus-bridge-five.vercel.app/)
+🌐 [Demo Link](https://campus-bridge-etic.vercel.app/)
 
 ---
 
@@ -22,7 +22,7 @@ Campus Bridge is a modern and lightweight LMS (Learning Management System) tailo
 | Frontend   | HTML, CSS, Bootstrap Icons, JavaScript |
 | Backend    | Node.js, Express.js           |
 | Database   | MySQL                         |
-| API Client | Postman (for testing)         |
+| API Client | Postman (for testing locally)         |
 
 ---
 
@@ -68,7 +68,7 @@ cd Campus-Bridge
 ### 2. Install dependencies
 
 ```bash
-npm install express mysql multer cors
+npm install express mysql2 multer cors
 ```
 
 ### 3. Setup MySQL
@@ -95,29 +95,6 @@ Make sure your local MySQL is running and matches your `db.js` config.
 
 ```bash
 node server.js
-```
-
----
-
-## 📬 API Usage (Postman)
-
-### Upload PDF
-
-`POST http://localhost:3000/upload`  
-**Form-data**:
-- `title` → Lecture Title (Text)
-- `pdf` → Upload PDF file (File)
-
-### Get All Resources
-
-`GET http://localhost:3000/resources`
-
----
-
-## 🌐 Visit in Browser
-
-```
-http://localhost:3000/lectures.html
 ```
 
 ---
